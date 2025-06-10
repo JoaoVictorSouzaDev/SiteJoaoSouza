@@ -171,12 +171,14 @@
             <div class="interface">
                 <h2 class="titulo">FALE <span>COMIGO.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo:" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail:" required>
-                    <input type="text" name="" id="" placeholder="Seu telefone:">
-                    <textarea name="" id="" placeholder="Sua mensagem:" required></textarea>
-                    <div class="btn-enviar"><input type="submit" value="ENVIAR"></div>
+                <form action="https://formsubmit.co/ajax/joaovictorsouza3233@gmail.com" method="post" data-form>
+
+                    <input type="text" name="name" id="name" placeholder="Seu nome completo:" required autocomplete="off">
+                    <input type="text" name="email" id="email" placeholder="Seu e-mail:" required autocomplete="off">
+                    <input type="text" name="cell" id="cell" placeholder="Seu telefone:" autocomplete="off">
+                    <textarea name="mensagem" id="mensagem" placeholder="Sua mensagem:" required autocomplete="off"></textarea>
+                    <button type="submit" class="btn-enviar" data-button>Enviar</button>
+
                 </form>
 
             </div><!--interface-->

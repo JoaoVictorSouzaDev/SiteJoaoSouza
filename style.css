@@ -325,13 +325,15 @@ form {
 form input,
 form textarea {
     width: 100%;
-    background-color: #242424;
-    border: 0;
+    background: #E8F0FE;
+    border: 0.125rem solid transparent;
     outline: 0;
     padding: 20px 15px;
-    border-radius: 15px;
-    color: #fff;
+    border-radius: 1.125rem;
+    color: black;
     font-size: 18px;
+    transition: border-color 0.3s;
+    box-shadow: 0.5s;
 }
 
 form textarea {
@@ -340,18 +342,37 @@ form textarea {
     max-height: 200px;
 }
 
-form .btn-enviar {
-    margin-top: 20px;
-    text-align: center;
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+    outline: none;
+    border-color: #AF0000;
+    box-shadow: 0 0 0 0.125rem #AF0000;
 }
 
-form .btn-enviar input {
-    width: 120px;
+form button {
+    border: none;
+    border: 50px;
+    color: white;
     background-color: #AF0000;
-    color: #fff;
-    font-weight: 700;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 18px;
+    height: 100px;
+    border-radius: 15px;
     transition: .2s;
+}
+
+button:hover,
+button:focus {
+    outline: none;
+    background: #AF0000;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background: #242424;
 }
 
 /* Estilo Rodapé */
