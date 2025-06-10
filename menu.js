@@ -82,7 +82,7 @@ class ForSubmit {
 const formSubmit = new ForSubmit({
     form: "[data-form]",
     button: "[data-button]",
-X    sucessAlertMessage: "Mensagem enviada com sucesso!",
+    sucessAlertMessage: "Mensagem enviada com sucesso!",
     errorAlertMessage: "Não foi possível enviar sua mensagem. Tente novamente.",
     redirectUrl: "/",
 });

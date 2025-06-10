@@ -88,6 +88,7 @@ header nav.menu-desktop ul li {
 .btn-abrir-menu{
     color: #AF0000;
     font-size: 40px;
+    display: none;
 }
 
 .menu-mobile{
@@ -348,7 +349,7 @@ textarea:hover,
 textarea:focus {
     outline: none;
     border-color: #AF0000;
-    box-shadow: 0 0 0 0.125rem #AF0000;
+    box-shadow: 0 0 0 0.0125rem #AF0000;
 }
 
 form button {
@@ -403,7 +404,7 @@ footer .line-footer p a {
 }
 
 @media screen and (max-width: 1020px) {
-
+    
     /* Clases gerais */
     .flex {
         flex-direction: column;
@@ -420,6 +421,20 @@ footer .line-footer p a {
 
     /* Cabeçario */
     .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+    .btn-abrir-menu {
+        display: block;
+        position: fixed;
+        top: 40px;
+        right: 4%;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    header nav.menu-desktop,
     .btn-contato {
         display: none;
     }
